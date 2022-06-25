@@ -57,7 +57,7 @@ else
   echo "creating from snapshot: ${snapshot}"
 fi
 
-uuid=$(cat /proc/sys/kernel/random/uuid)
+uuid=$(uuidgen)
 cwd=$(pwd)
 
 IMAGE=alpine:latest

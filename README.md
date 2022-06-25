@@ -8,17 +8,17 @@
 
 An example to run the command is the following:
 
-    backup-volume.sh -v <volume_name> -p <prefix>
+    backup-volume.sh -v <volume_name> -p <prefix_path>
 
 ## Restoring your docker volume
 
 Volumes can be restored using `create-volume-from-backup.sh` by invoking it in the following manner: 
 
-    create-volume-from-backup.sh -v <volume_name> -p <prefix>
+    create-volume-from-backup.sh -v <volume_name> -p <prefix_path> -s <snapshot_name>
 
 Optionally if you wish to create a volume with a different name from the backup the script can be invoked in the following manner: 
 
-    create-volume-from-backup.sh -v <volume_name> -p <prefix> -n <new_volume_name>
+    create-volume-from-backup.sh -v <volume_name> -p <prefix_path> -n <new_volume_name>
 
 ### Created by www.spherex.dev
 
