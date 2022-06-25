@@ -25,7 +25,7 @@ while [ $# -gt 0 ]; do
   shift
 done
 
-uuid=$(cat /proc/sys/kernel/random/uuid)
+uuid=$(uuidgen)
 if [ ! -d $prefix/$volume ]; then
   mkdir -p $prefix/$volume
 fi
